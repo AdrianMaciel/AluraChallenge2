@@ -10,18 +10,16 @@ bdif.addEventListener("click",dif);
 bfac.addEventListener("click",fac);
 //end
 function dif(){
-    var ran=Math.round(Math.random()*6);
+    var ran=Math.round(Math.random()*(plar.length-1));
     reset();
     pal=plar[ran];
-    console.log(pal);
     dibbar();
     div();
-}
+}//dificil
 function fac(){
-    var ran=Math.round(Math.random()*6);
+    var ran=Math.round(Math.random()*(pcor.length-1));
     reset();
     pal=pcor[ran];
-    console.log(pal);
     dibbar();
     div();
-}
+}//facil

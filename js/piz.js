@@ -4,7 +4,7 @@ var gra=pi.getContext("2d");
 function color(c){
     gra.fillStyle=c;
     gra.fillRect(0,0,700,1000);
-}
+}//fondo
 function ahorcado(n){
     gra.fillStyle="black";
     gra.fillRect(0,900,700,1000);/*suelo*/

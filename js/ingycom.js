@@ -27,10 +27,9 @@ function ingreso(E){
         txt.value="";
     }
     return;
-}
+}//Verificar ingreso apropiado de letras
 
 function revisar(){
-    console.log(txt.value);
     var rev=new RegExp(txt.value,"g");
     if(cont<5){
         if(rev.test(pal)){
@@ -53,12 +52,11 @@ function revisar(){
         derr();
     }
     return;
-}
+}//Verificar si la letra esta presente en la palabra
 
 function comparar(){
     for(i=0;i<pd.length;i++){
         if(txt.value==pd[i]){
-            console.log("ADENTRO DEL IF");
             bp[i]=pd[i];
             victory++;
         }
@@ -66,6 +64,5 @@ function comparar(){
     color("green");
     ahorcado(cont);
     txt.value="";
-    console.log(pd,bp,victory);
     reemplazo();
-}
+}//Encontrar posicion y cantidad de letras
