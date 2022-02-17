@@ -1,0 +1,38 @@
+<html>
+    <meta charset="UTF-8">
+    <h1>Bienvenido al juego del Ahorcado</h1>
+    <div>
+        <input type="text" placeholder="Ingrese una palabra" id="texto">
+        <button id="bfac">Palabras Cortas</button>
+        <button id="bdif">Palabras Largas</button>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th id="avfin"></th>
+                </tr>     
+            </thead>
+            <tbody>
+                <tr>
+                    <td>letras equivocadas:</td>
+                    <td id="letras"></td>
+                </tr>
+                <tr>
+                    <th id="barras"></th>
+                </tr>
+                <tr>
+                    <td id="respuesta"></td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+    <div>
+        <canvas width="700" height="1000" id="pizarra"></canvas>
+    </div>
+    <script src="js/ingycom.js"></script>
+    <script src="js/piz.js"></script>
+    <script src="js/selpal.js"></script>
+    <script src="js/fin.js"></script>
+    <script src="js/div.js"></script>
+</html>
