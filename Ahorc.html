@@ -1,38 +1,49 @@
 <html>
-    <meta charset="UTF-8">
-    <h1>Bienvenido al juego del Ahorcado</h1>
-    <div>
-        <input type="text" placeholder="Ingrese una palabra" id="texto">
-        <button id="bfac">Palabras Cortas</button>
-        <button id="bdif">Palabras Largas</button>
-    </div>
-    <div>
-        <table>
-            <thead>
-                <tr>
-                    <th id="avfin"></th>
-                </tr>     
-            </thead>
-            <tbody>
-                <tr>
-                    <td>letras equivocadas:</td>
-                    <td id="letras"></td>
-                </tr>
-                <tr>
-                    <th id="barras"></th>
-                </tr>
-                <tr>
-                    <td id="respuesta"></td>
-                </tr>
-            </tbody>
-        </table> 
-    </div>
-    <div>
-        <canvas width="700" height="1000" id="pizarra"></canvas>
-    </div>
+    <head>
+        <meta charset="UTF-8">
+        <header class="encabezado">Ahorcado</header>
+        <title>Ahorcado</title>
+    </head>
+    <body>
+        <ul class="lista">
+            <li class="item1">
+                <div class="div">
+                    <h1 class="titulo">Bienvenido al juego del Ahorcado</h1>
+                    <input type="text" placeholder="letra" id="texto" class="entrada">
+                    <button id="bfac" class="boton">Palabras Cortas</button>
+                    <button id="bdif" class="boton">Palabras Largas</button>
+                </div>
+                <div class="div">
+                    <table>
+                        <tr>
+                            <td class="informe">Letras Incorrectas:</td>
+                            <td id="letras"></td>
+                        </tr>
+                        <tr>
+                            <td class="informe">Palabra:</td>
+                            <td id="barras" class="barra"></td>
+                        </tr>
+                        <tr>
+                            <td id="avfin" class="final"></td>
+                        </tr>   
+                        <tr>
+                            <td id="respuesta" class="aviso"></td>
+                        </tr>
+                    </table> 
+                </div>
+            </li>
+            <li class="item2">
+                <div>
+                    <canvas width="1000" height="600" id="pizarra"></canvas>
+                </div>
+            </li>
+        </ul>
+    </body> 
     <script src="js/ingycom.js"></script>
     <script src="js/piz.js"></script>
     <script src="js/selpal.js"></script>
     <script src="js/fin.js"></script>
     <script src="js/div.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/vista.css">
 </html>
