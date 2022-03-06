@@ -25,5 +25,5 @@ function reset(){
     barra.textContent="";
     victory=0;
     cont=0;
-    gra.clearRect(0,0,700,1000)
+    gra.clearRect(0,0,1000,600)
 }
